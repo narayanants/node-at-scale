@@ -1,0 +1,24 @@
+Best Practices for Writing REST API's:
+====================================
+
+
+    * Use HTTP Methods and API Routes:
+    ---------------------------------
+        * Creating a REST API for creating,updating,retrieving and deleting users.
+        * For these we use HTTP Verbs such as
+
+            POST
+            PUT
+            GET
+            PATCH/DELETE
+        
+        * API Routes should always use nouns as resource identifiers.
+        * Speaking of the user's resources, the routing can look like this.
+
+            POST    =>  /user or /user/:id
+            GET     => /user to retrieve a list of users
+            GET     => /user/:id to retrieve a user
+            PATCH   => /user/:id to modifiy an existing record
+            DELETE  => /user/:id to remove a user
+
+
