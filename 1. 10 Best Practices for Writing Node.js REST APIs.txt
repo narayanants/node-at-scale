@@ -22,3 +22,56 @@ Best Practices for Writing REST API's:
             DELETE  => /user/:id to remove a user
 
 
+
+    Use HTTP Status Code Correctly:
+    -----------------------------
+
+        * 2xx   - Everything okay
+        * 3xx   - Resource was removed
+        * 4xx   - Request cannot be fulfilled because of a client error
+        * 5xx   - If something went wrong on the API side
+        
+    Use HTTP Headers to send Metadata:
+    ---------------------------------
+
+    To attach the payload about the metadata you are sending, use HTTP Headers
+    Headers like this can be info  such as 
+
+            Pagination
+            Rate limiting
+            Authentication
+
+    If you need to set any custom metadata in your headers, it was a best practice to prefix them with X
+    Eg: X-Csrf-token
+
+
+    Pick the right framework for your Node.js REST API:
+    ---------------------------------------------------
+
+        * Express, Koa and Hapi 
+        * Restify - Build Strict REST API's. Used by npm and Netflix
+        * Black-Box Test your Node.js REST API's
+        * Black box testing is a method of testing where the functionality of an application is examined without the knowledge of its internal structure or workings.
+        * So none of the dependencies are mocked or stubbed.
+
+
+    DO JWT Based,Stateless Authentication
+    -------------------------------------
+
+        * Authentication layer should also be Stateless
+        * JWT is ideal
+
+        JWT consists of 3 parts:
+        -----------------------
+
+            Headers - type of token and hashing algorithm
+            Payload - Containing the claims
+            Signature - JWT doesn't encrypt the payload, just signs it
+
+            Adding JWT-based Authentication to you application is very straightforward
+
+                
+
+
+
+
