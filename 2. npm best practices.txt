@@ -1,0 +1,29 @@
+NPM Best Practices:
+--------------------
+
+    * npm --version
+    * npm init --yes
+    * npm help
+    * npm init --yes
+
+    npm config set init.author.name YOUR_NAME
+    npm config set init.author.email YOUR_EMAIL
+
+    * npms.io
+    * npm home package
+    * npm bugs package
+    * npm repo package
+    * npm install package --save
+    * npm install package --save-dev
+    * npm shrinkwrap
+    * npm outdated
+    * npm install --production
+    * NODE_ENV=production npm install
+    * .npmrc
+    * .npmignore
+    * .gitignore
+    * npm link
+
+
+
+
