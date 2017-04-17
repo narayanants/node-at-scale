@@ -1,0 +1,13 @@
+Semver and Module Publishing:
+----------------------------
+
+ * Use MIT License
+ * Use Semantic Versioning ( MAJOR.MINOR.PATCH )
+ * Start Versioning at  1.0
+ * Have a .README.md file in your Project Root's
+ * using .npmignore will keep your secret or private files from Publishing
+ * Add files to .npmignore that you wish not to upload.
+ * .npmignore and .gitignore files in all subdirectories.
+ *  npm publish
+ * npm enterpirse for tightening your security by running a registry by yourself.
+ 
