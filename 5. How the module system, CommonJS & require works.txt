@@ -1,0 +1,45 @@
+How the module system, CommonJS & require works:
+------------------------------------------------
+
+* JS didn't have a way to organize code.
+* Node.js filled this gap with the CommonJS module format.
+
+
+Modules:
+-------
+
+* Modules are the fundamental building blocks of the code structure.
+* The module system allows you to organize your code, hide information and only expose the public interface of a component using module.exports.
+* Every time you use the "require" call, you are loading another module.
+
+Example:
+--------
+
+(function (exports, require, module, __filename, __dirname) {
+  function add (a, b) {
+    return a + b
+  }
+
+  module.exports = add
+});
+
+
+
+How does require work?:
+----------------------
+*  Caching the modules on the first "require" call
+
+
+Require under the Hood:
+-----------------------
+
+    * Module loading is done using module.js in lib/module.js
+    * Two important functions
+         __load  - checks whether module is cached,if so returns it.
+         __compile - Runs the file contents in the correct scope and exposes helper variables like exports,module or require to the file.
+
+
+What’s in your node_modules?
+----------------------------
+
+    - The node_modules folder is the place where Node.js looks for modules
