@@ -1,0 +1,27 @@
+HTTP:
+----
+
+Request
+Axios
+
+
+
+
+
+once - Only call a function once.
+cheerio  - Fast, flexible & lean implementation of core jQuery designed specifically for the server.
+
+
+
+
+
+Logging:
+-------
+
+Pino
+Bunyan
+
+Performance:
+-----------
+
+lighthouse
