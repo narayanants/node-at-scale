@@ -2,6 +2,7 @@ NPM Best Practices:
 --------------------
 
     * npm --version
+    * npm version (gives npm modules version)
     * npm init --yes
     * npm help
     * npm init --yes
