@@ -7,6 +7,8 @@ NPM Best Practices:
     * npm help
     * npm init --yes
 
+    nvm alias <alias_name> <version_number>
+
     npm config set init.author.name YOUR_NAME
     npm config set init.author.email YOUR_EMAIL
 
@@ -16,7 +18,7 @@ NPM Best Practices:
     * npm repo package
     * npm install package --save
     * npm install package --save-dev
-    * npm shrinkwrap
+    * npm shrinkwrap - It can return the version of the current package, the Node.js version you are using and OpenSSL or V8 versions.
     * npm outdated
     * npm install --production
     * NODE_ENV=production npm install
@@ -24,7 +26,3 @@ NPM Best Practices:
     * .npmignore
     * .gitignore
     * npm link
-
-
-
-
