@@ -1,0 +1,33 @@
+Garbage Collection:
+--------------------
+
+Memory Management in Node.js Applications:
+-----------------------------------------
+
+    * Every application needs memory to work properly. 
+    * Memory management provides ways to dynamically allocate memory chunks for programs when they request it, and free them when they are no longer needed - so that they can be reused.
+    
+    * Application-level memory management can be manual or automatic. 
+    * The automatic memory management usually involves a garbage collector.
+    * In manual memory management, it is the responsibility of the developer to free up the unused memory portions. 
+
+    * Memory leaks when the used memory space is never freed up.
+    * Wild/dangling pointers appear when an object is deleted, but the pointer is reused. Serious security issues can be introduced when other data structures are overwritten or sensitive information is read.
+
+    * Nodejs has in-built garbage collector.
+
+
+Concept of Garbage collector:
+-----------------------------
+
+   * Garbage Collection is a way of managing apps memory automatically.
+   * The job of the garbage collector (GC) is to reclaim memory occupied by unused objects (garbage).
+
+Advantages:
+-------------
+
+    * Prvents wild/dangling pointer bugs.
+    * Won't try to free up space that was already freed up.
+    * Protects you from wild memory leaks.
+
+
