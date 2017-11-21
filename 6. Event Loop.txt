@@ -1,0 +1,15 @@
+Event Loop:
+-----------
+
+The Problem:
+------------
+* Most of the backends behind websites don’t need to do complicated computations. 
+* Our programs mostly do I/O operations.
+* IO operations can be orders of magnitude slower than data processing. 
+
+
+Task queue:
+------------
+
+* Javascript is a single-threaded, event-driven language. 
+* This means that we can attach listeners to events, and when a said event fires, the listener executes the callback we provided.
