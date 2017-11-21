@@ -24,7 +24,6 @@ Example:
 });
 
 
-
 How does require work?:
 ----------------------
 *  Caching the modules on the first "require" call
